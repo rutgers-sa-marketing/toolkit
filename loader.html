@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Dynamic Banners!</title>
+	</head>
+	<body>
+		<h1>This is a simple test...</h1>
+		<!-- Copy the following into a Raw HTML element on the page -->
+		<script src="/Users/brd48/Desktop/bannerCache.js">
+			/* NOTE: The src url above should look something like this:
+				https://slwordpress.rutgers.edu/{.....}/bannerCache.js
+				If all goes well, then it loads the appropriate banner from the server side
+			*/
+		</script>
+		<div class="banner-js-area"></div>
+		<script>
+			/* I call this library BannanersJS! */
+			console.log("BanannersJS was successfully loaded!");
+			/* Target the area where the banner will be loaded */
+			let bannerTargetArea = document.querySelector(".banner-js-area");
+			/* Keep track of what time it is now. */
+			let thisMoment = new Date();
+			/* Check if the bannerCache was loaded from the server */
+			if(bannerCache){
+				/* Create the image element that will hold the banner */
+				let theBanner = document.createElement("img");
+				/* Use JavaScript Date objects to check if the expiration date associated with our latest banner has not passed.
+				   This next line of code specifically asks: is the expiration data greater than this moment right now?
+				*/
+				if(new Date(bannerCache.latest.expiration) > thisMoment ){
+					/* If the expiration date has NOT passed, then load the latest banner */
+					theBanner.setAttribute("src", bannerCache.latest.url);
+				}
+				else{
+					/* If the expiration date has passed, load the default banner */
+					theBanner.setAttribute("src", bannerCache.default.url);
+				}
+				/* Attach the banner element to the page */
+				bannerTargetArea.appendChild(theBanner);
+			}
+			/* If the bannerCache is not available, then report this in the browser so we can check to see what the problem is. */
+			else{
+				console.log("Failed to load the banner cache.");
+			}
+		</script>
+		<!-- Stop here -->
+		<p>A banner should load above this.</p>
+	</body>
+</html>
