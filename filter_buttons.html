@@ -1,0 +1,324 @@
+<head>
+	<style>
+		.vc_btn3-container{
+			display: inline-block;
+			padding: 8px 9px;
+			margin: 1vh 1vw;
+		}
+		iframe {
+			border: 1px solid #bfbfbf !important;
+		}
+
+		.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+			background-color: #eaeaea !important;
+		}
+
+		.vc_btn3-container.vc_btn3-inline .filter_btn{
+			background-color: #d21034;
+			color: white;
+		}
+		.dev-notes{
+			display: none;
+		}
+
+		.meal-swipe-text{
+			float: right;
+			color: #F80B0B;
+			font-size: 12px;
+		}
+
+		.wpb_map_wraper iframe{
+			margin-top: 1vh;
+			max-height: 40vh;
+		}
+
+		h4 a .vc_tta-controls-icon.vc_tta-controls-icon-plus{
+			display: none;
+		}
+
+		.vc_tta-container .vc_row *{
+			padding: 2px;
+		}
+
+		.vc_tta-container .vc_tta-panel-heading img {
+			margin-left: 5px;
+			margin-top: -38px;
+			max-width: 35px;
+			height: auto;
+		}
+
+		.vc_tta-container .vc_tta-panel-heading .vc_tta-title-text{
+			margin-left: 15px;
+		}
+		/*
+		.vc_tta-panel-body{
+			float: left;
+		}
+		*/
+		/*Row within a row padding*/
+		.vc_row:not(.vc_gitem_row):not(.vc_grid) {
+			margin-left: -12px;
+			margin-right: -12px;
+		}
+
+
+		/*
+		  Hide the accordian panels that do not have the appropriate campus class.
+		  The selector navigates to the row containing the accordian element and
+		  then jumps down the DOM to the element containing the list of accordian
+		  panels. The ones selected are those without the campus class.
+		*/
+		#busch:target ~ .vc_tta-container .vc_tta-panel:not(.busch-options){
+			display:none;
+		}
+		#livingston:target ~ .vc_tta-container .vc_tta-panel:not(.livi-options){
+			display:none;
+		}
+		#college-avenue:target ~ .vc_tta-container .vc_tta-panel:not(.cac-options){
+			display:none;
+		}
+		#cook-douglass:target ~ .vc_tta-container .vc_tta-panel:not(.cd-options){
+			display:none;
+		}
+
+		.daily-menu-btn{
+			padding: 10px 15px !important;
+			background-color: #e5bf78;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: all .35s ease;
+		}
+
+		.daily-menu-btn:hover{
+			background-color: #caa765;
+			text-decoration: none;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<div id="livingston" style="display: none;"></div>
+<div id="cook-douglass" style="display: none;"></div>
+<div id="college-avenue" style="display: none;"></div>
+<div id="busch" style="display: none;"></div>
+
+<div id="button_row">
+<div class="vc_btn3-container vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern filter_btn" href="#all" title="">All</a></div>
+<div class="vc_btn3-container vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern filter_btn" href="#college-avenue" title="">College Avenue</a></div>
+<div class="vc_btn3-container vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern filter_btn" href="#busch" title="">Busch</a></div>
+<div class="vc_btn3-container vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern filter_btn" href="#cook-douglass" title="">Cook + Douglass</a></div>
+<div class="vc_btn3-container vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern filter_btn" href="#livingston" title="">Livingston</a></div>
+</div>
+
+<div class="vc_tta-container" data-vc-action="collapseAll"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-grey vc_tta-style-classic vc_tta-shape-rounded vc_tta-o-shape-group vc_tta-controls-align-left vc_tta-o-all-clickable"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel cac-options meal-swipable" id="1496762394118-e2c2f39c-6179" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762394118-e2c2f39c-6179" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">CABfare</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="wp-image-2262 alignleft retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/CABfare.png" width="30" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/CABfare.png 610w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/CABfare-150x150.png 150w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/CABfare-300x300.png 300w" sizes="(max-width: 30px) 100vw, 30px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Located in the Robert Wood Johnson University Hospital on the third floor of the Clinical Academic Building is CABfare. The restaurant offers a variety of meals, bottled beverages, pastries and snacks. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+
+		</div> 
+	</div> <div class="vc_row wpb_row vc_inner wf-container" style="min-height: 0px;"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: left;"><strong>Weekdays</strong>: 7 am–5 pm<br>
+<strong>Closed Weekends</strong></p>
+
+		</div> 
+	</div> <div class="ult-spacer spacer-59494aee1ceca" data-id="59494aee1ceca" data-height="15" data-height-mobile="10" data-height-tab="15" data-height-tab-portrait="15" data-height-mobile-landscape="10" style="clear:both;display:block;"></div>
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><a class="daily-menu-btn" href="http://#">Daily Menu</a></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12136.48696576726!2d-74.449219!3d40.4946909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42a463742ad1a2fd!2sCABfare!5e0!3m2!1sen!2sus!4v1497646890388" width="100%" height="150" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+		</div> 
+	</div> </div></div></div></div></div></div><div class="vc_tta-panel cd-options" id="1496762394302-45c07f41-39e1" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762394302-45c07f41-39e1" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Cafe 52</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-2263 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Cafe_52-e1497291253511.png" width="59" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Cafe_52-e1497291253511.png 306w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Cafe_52-e1497291253511-300x152.png 300w" sizes="(max-width: 59px) 100vw, 59px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Cafe 52, a glass-enclosed facility within the Mason Gross Performing Arts Center on the Douglass Campus, rises above Ryders Lane and Route 18 and serves the conservatory’s Music, Dance and Theater departments, providing additional rehearsal and performance spaces.</p>
+
+		</div> 
+	</div> <div class="vc_row wpb_row vc_inner wf-container" style="min-height: 0px;"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: left;" align="center"><strong>Weekdays</strong>: 8:00am –10:00pm<br>
+<strong>Closed Weekends</strong></p>
+
+		</div> 
+	</div> <div class="ult-spacer spacer-59494aee2006f" data-id="59494aee2006f" data-height="15" data-height-mobile="10" data-height-tab="15" data-height-tab-portrait="15" data-height-mobile-landscape="10" style="clear:both;display:block;"></div>
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><a class="daily-menu-btn" href="http://#">Daily Menu</a></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5177.526134950021!2d-74.43601990077181!3d40.48768522900305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c650990dbecf%3A0x451f32c57cc3ff2e!2sMason+Gross+School+of+the+Arts%2C+New+Brunswick%2C+NJ+08901!5e0!3m2!1sen!2sus!4v1497650569246" width="100%" height="150" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+		</div> 
+	</div> </div></div></div></div></div></div><div class="vc_tta-panel cd-options meal-swipable" id="1496762394483-6d1cdc2d-4ba7" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762394483-6d1cdc2d-4ba7" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Cook Cafe</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2264" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/cook_cafe-e1497291200637.png" width="48" height="30"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>The Cook Cafe is located at the <a href="http://studentcenters.rutgers.edu/student-centers/cook-student-center/">Cook Student Center</a> on the Cook/Douglass campus. It offers a variety of meals, bottled beverages, pastries and snacks. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics</p>
+
+		</div> 
+	</div> <div class="vc_row wpb_row vc_inner wf-container" style="min-height: 0px;"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><strong>Weekdays</strong>: 8 am–10 pm<br>
+<strong>Weekends</strong>: 11 am–6 pm</p>
+<p><em>Grill closes two hours before closing.</em></p>
+
+		</div> 
+	</div> <div class="ult-spacer spacer-59494aee232fc" data-id="59494aee232fc" data-height="15" data-height-mobile="10" data-height-tab="15" data-height-tab-portrait="15" data-height-mobile-landscape="10" style="clear:both;display:block;"></div>
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><a class="daily-menu-btn" href="http://#">Daily Menu</a></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.8286675876598!2d-74.43362828398094!3d40.47905525976947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c66af042fa09%3A0x9f7b48740b93325b!2sCook+Student+Center!5e0!3m2!1sen!2sus!4v1497652330226" width="100%" height="150" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+		</div> 
+	</div> </div></div></div></div></div></div><div class="vc_tta-panel cd-options meal-swipable" id="1496762394674-42b0e90c-9b69" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762394674-42b0e90c-9b69" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Douglass Cafe</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2265 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Douglass_Cafe.png" width="30" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Douglass_Cafe.png 280w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Douglass_Cafe-150x150.png 150w" sizes="(max-width: 30px) 100vw, 30px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>The Douglass Cafe is located in the <a href="http://studentcenters.rutgers.edu/student-centers/douglass-student-center/">Douglass Student Center</a> on the Cook/Douglass campus. It offers a variety of meals, bottled beverages, pastries and snacks. See retail policy for meal swipe specifics. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Monday–Thursday</strong>: 7:30 am–8 pm<br>
+<strong>Friday</strong>: 7:30 am–8 pm<br>
+<strong>Weekends</strong>:&nbsp;10 am–4 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cd-options" id="1496762394873-896753d2-a77e" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762394873-896753d2-a77e" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Dunkin Donuts (Douglass)</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1371 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/aWjYe13J_400x400.jpeg" alt="Dunkin Donuts Logo" width="30" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/aWjYe13J_400x400.jpeg 400w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/aWjYe13J_400x400-150x150.jpeg 150w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/aWjYe13J_400x400-300x300.jpeg 300w" sizes="(max-width: 30px) 100vw, 30px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At&nbsp;the <a href="http://studentcenters.rutgers.edu/student-centers/douglass-student-center/">Douglass Student Center</a>,&nbsp;enjoy&nbsp;great tasting coffee, sandwiches and baked goods that will keep you going&nbsp;throughout the&nbsp;day.</p>
+<p><strong>Monday–Thursday</strong>: 7:30 am–8 pm<br>
+<strong>Friday</strong>: 7:30 am–6 pm<br>
+<strong>Weekends</strong>: 10 am–4 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options" id="1496762395052-14d2d0bd-fc63" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762395052-14d2d0bd-fc63" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Dunkin Donuts (Livingston)</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1664 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/DunkinDonutsLogo634x634.png" alt="Dunkin Donuts Logo" width="30" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/DunkinDonutsLogo634x634.png 634w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/DunkinDonutsLogo634x634-150x150.png 150w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/DunkinDonutsLogo634x634-300x300.png 300w" sizes="(max-width: 30px) 100vw, 30px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At the <a href="http://studentcenters.rutgers.edu/student-centers/livingston-student-center/">Livingston Student Center</a>, enjoy&nbsp;great tasting coffee, sandwiches and baked goods that will keep you going&nbsp;throughout the&nbsp;day.</p>
+<p><strong>Monday–Thursday</strong>: 7:30 am–8 pm<br>
+<strong>Friday</strong>: 7:30 am–6 pm<br>
+<strong>Closed on weekends</strong></p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cd-options" id="1496762395257-2a564b04-5945" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762395257-2a564b04-5945" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Harvest IFNH</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1674 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/HarvestIFNH.png" alt="HarvestIFNH" width="29" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/HarvestIFNH.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/HarvestIFNH-150x150.png 150w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/HarvestIFNH-293x300.png 293w" sizes="(max-width: 29px) 100vw, 29px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Located in the Food Science and Nutritional Sciences Building West is <a href="http://ifnh.rutgers.edu/harvest.html">Harvest IFNH</a>. Harvest IFNH&nbsp;offers creative dishes that are focused on whole, minimally processed food, with “from scratch” culinary techniques that develop flavor without additives. The Harvest menu offerings will feature house-made grain &amp; legume salads as part of an abundant and varied salad and fruit bar, a noodle bowl station with a trio of broths and dozens of add-ins, a juice and smoothie bar, brick-oven, along with daily entrées and sides. Harvest provides breakfast and lunch service.</p>
+<p><strong>Weekdays</strong>:&nbsp;8 am–2:30 pm<br>
+<strong>Closed on weekends</strong></p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options" id="1496762395456-4a0a4175-ada0" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762395456-4a0a4175-ada0" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Henry's Diner</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1462" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/Henrysblackandredblackbackground-1-01.png" alt="Henry's Diner Logo" width="30" height="30"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At the Livingston Retail Plaza, enjoy a milkshake, your very own customized burger or a hearty breakfast at any time of the day.</p>
+<p>See the menu <a href="https://slwordpress.rutgers.edu/food/wp-content/uploads/sites/62/2017/02/henrysdiner_fall2016-1.pdf">here</a>.</p>
+<p><strong>Weekdays</strong>: 9 am–midnight<br>
+<strong>Weekends</strong>: 9 am–9 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options meal-swipable" id="1496762395662-13b7ec4f-655e" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762395662-13b7ec4f-655e" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Kilmer's Market</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-1394" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KilmersMarket081015-01.png" alt="Kilmer's Market" width="59" height="30"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At the Livingston Retail Plaza, savor the flavors of this on-campus market and grocer that features store-made deli sandwiches, freshly tossed salads as well as a variety of fruits, vegetables, snacks and bottled beverages. Meal swipes are accepted from 11 am–3 pm and again from 5–8 pm. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Weekdays</strong>:&nbsp;8 am–9 pm<br>
+<strong>Closed on weekends</strong></p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cac-options busch-options cd-options livi-options meal-swipable" id="1496762395860-d1a21eed-375c" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762395860-d1a21eed-375c" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Knight Wagon</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-1400 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KnightWagon081015.png-1-01.png" alt="KnightWagon" width="39" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KnightWagon081015.png-1-01.png 3300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KnightWagon081015.png-1-01-300x232.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KnightWagon081015.png-1-01-768x593.png 768w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/KnightWagon081015.png-1-01-1024x791.png 1024w" sizes="(max-width: 39px) 100vw, 39px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Every day, the scarlet red mobile truck serves gourmet medieval themed meals fresh off the grill that are easy to grab and go. While serving unconventional meals, it also offers a fun experience for customers who can enjoy satellite television. The Knight Wagon takes meal swipes and RU Express, the university debit program, and cash. Students’ response to the Knight Wagon are overwhelmingly positive according to Dining Services <a href="https://www.facebook.com/">Facebook</a>&nbsp;and<a href="https://twitter.com/KNIGHTWAGON?lang=en">Twitter</a>&nbsp;pages, which also reveal the truck’s daily locations.</p>
+<p>See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p>See the menu <a href="https://slwordpress.rutgers.edu/food/wp-content/uploads/sites/62/2016/12/Knightwagonmenu-1.pdf">here</a>.</p>
+<p>Schedule:</p>
+<p>Monday: College Avenue</p>
+<p>Tuesday: Livingston</p>
+<p>Wednesday: Busch</p>
+<p>Thursday: Cook/Douglass</p>
+<p>Friday: College Avenue</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cd-options meal-swipable" id="1496762396534-037a43c8-fbee" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762396534-037a43c8-fbee" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Red Pine Pizza</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2302" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/red_pine_tree.png" width="25" height="36"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Located in the <a href="http://studentcenters.rutgers.edu/student-centers/douglass-student-center/">Douglass Student Center</a>, enjoy hand-tossed pizza and a variety of hot and cold meals and bottled beverages. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Weekdays</strong>: 10:30 am–10 pm<br>
+<strong>Weekends</strong>: noon–10 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options meal-swipable" id="1496762396748-f6c2740e-f325" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762396748-f6c2740e-f325" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Rock Cafe</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2269 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/rock_cafe.png" width="81" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/rock_cafe.png 664w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/rock_cafe-300x112.png 300w" sizes="(max-width: 81px) 100vw, 81px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At the <a href="http://studentcenters.rutgers.edu/student-centers/livingston-student-center/">Livingston Student Center</a>, the Rock Cafe offers a variety of meals, bottled beverages, pastries and a variety of snacks. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Monday–Thursday</strong>: 8 am–9 pm<br>
+<strong>Friday</strong>: 8 am–8 pm<br>
+<strong>Weekends</strong>: 10 am–4 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options meal-swipable" id="1496762396968-1acb366f-d1f0" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762396968-1acb366f-d1f0" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Sbarro</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-1369 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/sbarro_logo_detail.png" alt="Sbarro Logo" width="33" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/sbarro_logo_detail.png 1000w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/sbarro_logo_detail-300x270.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/sbarro_logo_detail-768x691.png 768w" sizes="(max-width: 33px) 100vw, 33px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At&nbsp;the <a href="http://studentcenters.rutgers.edu/student-centers/livingston-student-center/">Livingston Student Center</a>, choose from a variety of options including pizza, salad, pasta and cold beverages. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Weekdays</strong>: 11 am–10 pm<br>
+<strong>Weekends</strong>: 3 pm–10 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel livi-options" id="1496762397206-ae0290d2-ed9e" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762397206-ae0290d2-ed9e" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Starbucks</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1657" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/Starbucks.png" alt="Starbucks Logo" width="33" height="30"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>At the Livingston Retail Plaza, reignite your love affair with handcrafted, high-quality coffee, sandwiches and pastries.</p>
+<p align="left"><strong>Monday–Thursday</strong>: 7 am–11 pm<br>
+<strong>Friday</strong>: 7 am–10 pm<br>
+<strong>Weekends</strong>: 9:30 am–9 pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cac-options busch-options cd-options" id="1496762397432-e2003c76-3093" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762397432-e2003c76-3093" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Starbucks Truck</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1657" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/04/Starbucks.png" alt="Starbucks Logo" width="33" height="30"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Rutgers’ Starbucks Truck makes its way around each campus&nbsp;throughout the week. The famous Starbucks Truck, being that it is only one of six in the country, serves the entire menu&nbsp;from any other Starbucks location including the sandwiches and pastries. The truck takes RU Express and to receive constant updates on the Starbucks Truck, follow them on <a href="https://twitter.com/rustartruck?lang=en">Twitter</a>.</p>
+<p>Locations:</p>
+<p>College Avenue – Intersection of Senior Street and College Avenue</p>
+<p>Busch – Across from Allison Road Classrooms</p>
+<p>Cook/Douglass – Across from the Biel Road bus stop</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel cac-options meal-swipable" id="1496762397659-f5a67786-38cc" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762397659-f5a67786-38cc" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">The Rutgers Club</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2249 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/RutgersClub_LogoWhite.png" width="30" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/RutgersClub_LogoWhite.png 792w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/RutgersClub_LogoWhite-150x150.png 150w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/RutgersClub_LogoWhite-300x300.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/RutgersClub_LogoWhite-768x768.png 768w" sizes="(max-width: 30px) 100vw, 30px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Located at 199 College Ave. is The Rutgers Club. Every Monday and Thursday is Student Night where a student can enjoy a buffet dinner with a meal swipe and $2. The buffet consists of soup of the day, pasta entree, vegetable, starch, protein entree, vegetarian entree and marinated cold salads, fresh field green salad, fresh rolls, dessert station and soda.</p>
+<p>Reservations are required. The first&nbsp;reservation is at 5 pm and the last is at 7:30 pm. Call (848) 932-7139 before 11:30 am or after 2:30 pm to make reservations. E-mail reservations are not accepted.</p>
+<p>See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel busch-options" id="1496762397882-2f076787-950a" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762397882-2f076787-950a" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">UBHC</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4><img class="alignleft wp-image-1512 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/rdiningblack-01-1.png" alt="Rutgers Dining Logo" width="39" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/rdiningblack-01-1.png 3300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/rdiningblack-01-1-300x232.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/rdiningblack-01-1-768x593.png 768w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/02/rdiningblack-01-1-1024x791.png 1024w" sizes="(max-width: 39px) 100vw, 39px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Rutgers University Behavioral Health Care (UBHC) is committed to providing quality food services to those in need of behavioral health services.</p>
+<p><strong>Weekdays</strong>:&nbsp;8 am–5 pm<br>
+<strong>Weekends &amp; Holidays</strong>: 9 am–4:30pm</p>
+
+		</div> 
+	</div> </div></div><div class="vc_tta-panel busch-options meal-swipable" id="1496762398118-cb1bbd8a-aee0" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1496762398118-cb1bbd8a-aee0" data-vc-accordion="" data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Woody's</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i><span class="meal-swipe-text">Accepts Meal Plans!</span></a></h4><img class="alignleft wp-image-2270 retinized" src="https://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Woodys-01.png" width="39" height="30" srcset="http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Woodys-01.png 792w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Woodys-01-300x232.png 300w, http://slwordpress.rutgers.edu/dining/wp-content/uploads/sites/138/2017/06/Woodys-01-768x593.png 768w" sizes="(max-width: 39px) 100vw, 39px"></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element  ">
+		<div class="wpb_wrapper">
+			<p>Located in the Kessler Teaching Building is Woody’s the medical school cafeteria. Woody’s offers a variety of hot and cold meals, bottled beverages, pastries and a variety of snacks. See our&nbsp;<a href="https://slwordpress.rutgers.edu/dining/policies-2/retail-policy/">retail policy</a> for meal swipe specifics.</p>
+<p><strong>Weekdays</strong>:&nbsp;7:30 am–7:30 pm<br>
+<strong>Weekends</strong>:&nbsp;10 am–4 pm</p>
+
+		</div> 
+	</div> </div></div></div></div></div></div>
